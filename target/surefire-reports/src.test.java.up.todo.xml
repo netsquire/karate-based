@@ -1,0 +1,24 @@
+<testsuite failures="0" name="src/test/java/up/todo.feature" skipped="0" tests="2" time="0.651151">
+  <testcase classname="src.test.java.up.todo" name="Verify First Todo is equals to &quot;delectus aut autem&quot;" time="0.513737">
+    <system-out>* url 'https://jsonplaceholder.typicode.com/todos/1' ...................... passed
+Given request ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == { userId: 1, id: 1, title: "delectus aut autem", completed: false } . passed</system-out>
+  </testcase>
+  <testcase classname="src.test.java.up.todo" name="Verify First Todo is equals to the sum of its parts" time="0.137414">
+    <system-out>* url 'https://jsonplaceholder.typicode.com/todos/1' ...................... passed
+Given request ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response == { userId: 1, id: 1, title: "delectus aut autem", completed: false } . passed
+* url 'https://jsonplaceholder.typicode.com/todos/1' ...................... passed
+Given request ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response.userId == 1 ............................................ passed
+And match response.id == 1 ................................................ passed
+And match response.title == "delectus aut autem" .......................... passed
+And match response.completed == false ..................................... passed</system-out>
+  </testcase>
+</testsuite>

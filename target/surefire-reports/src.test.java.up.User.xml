@@ -1,0 +1,7 @@
+<testsuite failures="0" name="src/test/java/up/User.feature" skipped="0" tests="1" time="0.628288">
+  <testcase classname="src.test.java.up.User" name="Fetch all users" time="0.628288">
+    <system-out>Given url 'https://google.com' ............................................ passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

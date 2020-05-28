@@ -1,0 +1,9 @@
+<testsuite failures="0" name="src/test/java/up/contains.feature" skipped="0" tests="1" time="0.556819">
+  <testcase classname="src.test.java.up.contains" name="Verify First Todo title contains &quot;delectus&quot;" time="0.556819">
+    <system-out>* url 'https://jsonplaceholder.typicode.com/todos/1' ...................... passed
+Given request ............................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+And match response contains { title: "#regex ^(\\w+[delectus]).+"} # Supports regex out of the box . passed</system-out>
+  </testcase>
+</testsuite>

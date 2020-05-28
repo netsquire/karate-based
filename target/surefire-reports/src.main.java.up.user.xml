@@ -1,0 +1,15 @@
+<testsuite failures="1" name="src/main/java/up/user.feature" skipped="0" tests="1" time="0.414008">
+  <testcase classname="src.main.java.up.user" name="Fetch all users" time="0.414008">
+    <failure message="user.feature:4 - &#10;org.apache.http.conn.HttpHostConnectException: Connect to some-api.com:443 [some-api.com/93.190.235.135] failed: Connection refused (Connection refused)">Given url 'https://some-api.com/api/users' ................................ passed
+When method GET ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: user.feature:4 - 
+org.apache.http.conn.HttpHostConnectException: Connect to some-api.com:443 [some-api.com/93.190.235.135] failed: Connection refused (Connection refused)
+	at ✽.When method GET (user.feature:4)
+
+Then status 200 ........................................................... skipped
+And assert response.length == 2 ........................................... skipped
+And match response[0].name == 'FirstUser' ................................. skipped</failure>
+  </testcase>
+</testsuite>
